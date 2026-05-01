@@ -1,9 +1,16 @@
 # 🖥️ ClonMedic: Omni-Channel Medical Ecosystem
-**Made by Shree Kale | Version: ClonMed v1.0 (Build: Crimson Genesis)**
+**Version: ClonMed v1.0 (Build: Crimson Genesis)**
 
 Welcome to the ClonMedic Ecosystem. This project is built on a "Compile-Once, Run-Anywhere" architecture. Whether you are running the Native Windows Client, the Brutalist Web OS, or standard Chrome, you are interacting with the exact same unified physics engine and simulation hub. 
 
-This README provides the complete navigation workflow and developer setup instructions.
+---
+
+## 🚀 Quick Install (Global CLI)
+
+We have packaged the entire ecosystem into a single command-line tool. You can install it globally via NPM to boot the system from anywhere on your machine:
+```bash
+npm install -g clonmedic
+```
 
 ---
 
@@ -50,21 +57,25 @@ If you chose to download the native application via the Download Portal:
 
 ---
 
-## 🛠️ Developer Guide: Running the MCP Inspector
+## 🛠️ Developer Guide: Local CLI & MCP Inspector
 
-ClonMedic uses an AI Compiler powered by the Model Context Protocol (MCP) to translate English medical commands into physics engine triggers. To test the backend tools and AI logic, you can run the MCP Inspector locally.
+ClonMedic uses an AI Compiler powered by the Model Context Protocol (MCP) to translate English medical commands into physics engine triggers. 
 
-### Setup Instructions
+Once you have installed the CLI (or if you are running it locally via `npm link`), you have access to two primary system commands:
 
-1. **Download the Server Folder:** Clone or download the MCP server folder to your local machine.
-2. **Open Terminal:** Navigate into the downloaded folder using your terminal or command prompt.
-3. **Install Dependencies & Start the Inspector:** Run the following commands:
+### 1. Boot the Main System
 ```bash
-# Install required packages
-npm install
+clonmedic start
+```
+*This initializes the MCP Bridge and automatically launches the Brutalist Web OS in your default browser.*
 
-# Build the server (if required by your setup)
-npm run build
+### 2. Launch the Local MCP Inspector
+To test the backend tools and AI logic directly in a sandbox environment locally, run the inspector command:
+```bash
+clonmedic inspect
+```
+*This will spawn an isolated server environment and provide a `localhost` link in your terminal. Open that link to access the Inspector UI, where you can manually trigger medical tools (e.g., `administer_medication`) and verify the raw JSON output.*
 
-# Boot the MCP Inspector
-npx @modelcontextprotocol/inspector node build/index.js
+---
+
+*Made with passion ❤️ by Shree (ClonMed 2026@)*
