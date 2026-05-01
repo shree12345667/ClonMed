@@ -1,43 +1,70 @@
-🧬 Clonmed | Advanced Medical OS & MCP Simulation Engine The definitive interactive clinical infrastructure. 100+ labs. Powered by MCP.
+# 🖥️ ClonMedic: Omni-Channel Medical Ecosystem
+**Made by Shree Kale | Version: ClonMed v1.0 (Build: Crimson Genesis)**
 
-🌐 Live Web Simulation Access the complete suite of labs instantly through any modern browser:
+Welcome to the ClonMedic Ecosystem. This project is built on a "Compile-Once, Run-Anywhere" architecture. Whether you are running the Native Windows Client, the Brutalist Web OS, or standard Chrome, you are interacting with the exact same unified physics engine and simulation hub. 
 
-URL: https://taupe-druid-86622d.netlify.app/
+This README provides the complete navigation workflow and developer setup instructions.
 
-📦 Windows Desktop Installer To download the standalone medical operating system, go to the "Releases" page of this repository and download the latest .exe file that is the app.
+---
 
-🚨 The Vision Clonmed is a comprehensive, browser-native biomedical infrastructure featuring 100+ interactive, mathematically accurate labs. Engineered for the Model Context Protocol (MCP), it transforms AI agents into clinical experts by providing a high-fidelity visual execution environment for surgical and diagnostic procedures.
+## 🔗 Quick Links
 
-⚡ Deployment Methods
+*   **🌐 Main Web OS (Entry Point):** [https://polite-lamington-b8d87d.netlify.app/](https://polite-lamington-b8d87d.netlify.app/)
+*   **🩺 Web Simulation Hub (Direct):** [https://taupe-druid-86622d.netlify.app/](https://taupe-druid-86622d.netlify.app/)
+*   **📥 Native Download Portal:** [https://super-crisp-af6236.netlify.app/](https://super-crisp-af6236.netlify.app/)
 
-Standalone Windows Desktop OS (Recommended) Experience Clonmed as a dedicated, high-performance desktop application.
-Navigate to the Releases tab on the right side of this GitHub repository.
+---
 
-Download and run Clonmed_v1.0.exe.
+## 🧭 Navigation Workflow: How to Use the OS
 
-System Directory: The engine is securely installed in C:\Program Files (x86)\ClonMed.
+The best way to experience ClonMedic is through our custom Neo-Brutalist Web OS. Here is the exact user flow:
 
-OS Mode: Launches in a dedicated window with disabled context menus and dev tools for a pure simulation experience.
+### Step 1: Booting the OS
+Navigate to the **Main Web OS** link. You will be greeted by a functional, brutalist-style search engine. You can use the search bar to index the web, but the core application is located in the central banner.
 
-Instant Web Simulation No installation required. Run the full engine directly on the web: URL: https://taupe-druid-86622d.netlify.app/
-🔬 Simulation Arsenal Clonmed organizes 106 high-precision HTML5/Canvas laboratories into four critical sectors:
+### Step 2: The Initialization Protocol
+Click the massive **"Interactive Labs"** graphic in the center of the screen. This triggers the Initialization Protocol modal, presenting you with your environment choices.
 
-Surgical Protocols: Precision intervention games including Neural Resection, Vascular Embolization, and Gastric Sleeve procedures.
+### Step 3: Environment Selection (The 4 Options)
+You will see a grid of buttons. Depending on how you want to run the app, choose one of the following:
 
-Diagnostics & Labs: Digital twins of sensors such as MRI Alignment, PCR Cycling, and Ultrasound Echo.
+**Option 1: Download the Native Client**
+*   **The Big Blue Button:** Opens the Native Download Portal *inside a new tab within the Brutalist Web OS*.
+*   **The Small Chrome Button (below it):** Breaks out of the OS and opens the Download Portal in a brand-new, external browser tab.
 
-Pathology Engines: High-stakes trauma simulations covering Viral Hijacking, Lead Poisoning, and Burn Estimators.
+**Option 2: Run in the Web Environment**
+*   **The Big White Button:** Injects the Web Simulation Hub directly *into your active Brutalist Web OS window*.
+*   **The Small Chrome Button (below it):** Breaks out of the OS and opens the Web Simulation Hub in a brand-new, external browser tab.
 
-Human OS Logic: Under-the-hood biophysics including Action Potentials, Fluid Dynamics, and the Bohr Effect.
+*(Note: Because of our Omni-Channel architecture, the simulation is the exact same application regardless of which environment you choose).*
 
-🧠 The MCP Superpower Clonmed serves as a Visual Tool Registry for AI agents. By integrating Clonmed with an MCP-enabled agent, the AI can programmatically launch specific procedures. When an agent identifies a medical necessity, it can trigger the corresponding simulation, bridging the gap between text-based advice and interactive clinical execution.
+---
 
-🛠️ Tech Stack Core Engine: Vanilla JavaScript (Canvas API), HTML5, CSS3.
+## 💻 Installing the Windows Native Client
 
-UI Design: Clinical Minimalist / Glassmorphism.
+If you chose to download the native application via the Download Portal:
+1. Navigate to the [Download Portal](https://super-crisp-af6236.netlify.app/).
+2. Go to the **Releases** section on the page.
+3. Click on `clonmed.exe` to start the download.
+4. Once downloaded, double-click the `.exe` file to launch the standalone medical simulator directly on your desktop.
 
-Packaging: Nativefier & Inno Setup Compiler.
+---
 
-Hosting: Netlify.
+## 🛠️ Developer Guide: Running the MCP Inspector
 
-© 2026 Clonmed Labs. Engineered for the Devpost A2A/MCP Hackathon.
+ClonMedic uses an AI Compiler powered by the Model Context Protocol (MCP) to translate English medical commands into physics engine triggers. To test the backend tools and AI logic, you can run the MCP Inspector locally.
+
+### Setup Instructions
+
+1. **Download the Server Folder:** Clone or download the MCP server folder to your local machine.
+2. **Open Terminal:** Navigate into the downloaded folder using your terminal or command prompt.
+3. **Install Dependencies & Start the Inspector:** Run the following commands:
+```bash
+# Install required packages
+npm install
+
+# Build the server (if required by your setup)
+npm run build
+
+# Boot the MCP Inspector
+npx @modelcontextprotocol/inspector node build/index.js
