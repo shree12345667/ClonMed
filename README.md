@@ -16,7 +16,7 @@ npm install -g clonmedic
 
 ## 🔗 Quick Links
 
-*   **🌐 Main Web OS (Entry Point):** [https://polite-lamington-b8d87d.netlify.app/](https://polite-lamington-b8d87d.netlify.app/)
+*   **🌐 Main Web browser (Entry Point):** [https://polite-lamington-b8d87d.netlify.app/](https://polite-lamington-b8d87d.netlify.app/)
 *   **🩺 Web Simulation Hub (Direct):** [https://taupe-druid-86622d.netlify.app/](https://taupe-druid-86622d.netlify.app/)
 *   **📥 Native Download Portal:** [https://super-crisp-af6236.netlify.app/](https://super-crisp-af6236.netlify.app/)
 
@@ -27,7 +27,7 @@ npm install -g clonmedic
 The best way to experience ClonMedic is through our custom Neo-Brutalist Web OS. Here is the exact user flow:
 
 ### Step 1: Booting the OS
-Navigate to the **Main Web OS** link. You will be greeted by a functional, brutalist-style search engine. You can use the search bar to index the web, but the core application is located in the central banner.
+Navigate to the **Main Web browser** link. You will be greeted by a functional, brutalist-style search engine. You can use the search bar to index the web, but the core application is located in the central banner.
 
 ### Step 2: The Initialization Protocol
 Click the massive **"Interactive Labs"** graphic in the center of the screen. This triggers the Initialization Protocol modal, presenting you with your environment choices.
